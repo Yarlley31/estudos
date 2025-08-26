@@ -26,26 +26,26 @@ void middle_insertion(Node* head, int new_value, int reference_value){
         return;
     }
 
-    Node* current = head;
-    while (current != NULL && current->dados != reference_value){
-        current = current->next;
+    Node* aux = head;
+    while (aux != NULL && aux->dados != reference_value){
+        aux = aux->next;
     }
 
-    if (current != NULL){
+    if (aux != NULL){
         Node* new_node = create_node(new_value);
-        new_node->next = current->next;
-        current->next = new_node;
+        new_node->next = aux->next;
+        aux->next = new_node;
     } else {
         printf("Nó de referência %d nao encontrado.\n", reference_value);
     }
 
 }
 void print(Node* head){
-    Node* current = head;
+    Node* aux = head;
     printf("Lista: ");
-    while (current != NULL){
-        printf("%d -> ", current->dados);
-        current = current->next;
+    while (aux != NULL){
+        printf("%d -> ", aux->dados);
+        aux = aux->next;
     }
     printf("NULL\n");
 }
