@@ -20,13 +20,13 @@ Node* create_node(int value) {
     return new_node;
 }
 
-void middle_insertion(Node* head, Node* new_node){
-    if (head == NULL){
+void middle_insertion(Node** head, Node* new_node){
+    if (*head == NULL){
         printf("Lista vazia\n");
         return;
     }
 
-    Node* aux = head;
+    Node* aux = *head;
     while (aux->next && aux->next->n < new_node->n){
         aux = aux->next;
     }
@@ -35,8 +35,8 @@ void middle_insertion(Node* head, Node* new_node){
     aux->next = new_node;
 
 }
-void print(Node* head){
-    Node* aux = head;
+void print(Node** head){
+    Node* aux = *head;
     printf("Lista: ");
     while (aux != NULL){
         printf("%d -> ", aux->n);
@@ -49,17 +49,17 @@ int main(){
     Node* head = create_node(10);
     Node* new_node = create_node(15);
 
-    middle_insertion(head, new_node);
+    middle_insertion(&head, new_node);
 
     new_node = create_node(13);
 
-    middle_insertion(head, new_node);
+    middle_insertion(&head, new_node);
     
     new_node = create_node(20);
 
-    middle_insertion(head, new_node);
+    middle_insertion(&head, new_node);
     
-    print(head);
+    print(&head);
 
     Node* aux;
     while (head != NULL){
