@@ -55,9 +55,9 @@ void print(Node* head){
 }
 
 void remove_higher_priority(Node** head){
-    if (*head == NULL){
+    if (*head == NULL)
         printf("A fila já está vazia.\n");
-    }
+    
 
     Node* to_be_removed = *head;
     *head = (*head)->next;
@@ -82,9 +82,8 @@ int main(){
     priority_insertion(&queue, 200, 3);
     priority_insertion(&queue, 100, 2);
     priority_insertion(&queue, 250, 4);
-    priority_insertion(&queue, 500, 4); // ta sobrescrevendo quando de mesma prioridade;
-    priority_insertion(&queue, 2, 1);
-
+    priority_insertion(&queue, 500, 4); 
+    
     print(queue);
     remove_higher_priority(&queue);
     print(queue);
