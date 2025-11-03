@@ -57,6 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "binary_tree_bee1195": "c"
+    "binary_tree_bee1195": "c",
+    "stdio.h": "c"
   }
 }
