@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Yarlley/Documentos/documentosUEFS/Disciplinas/2º periodo/Estrutura de Dados/estudos",
-      "program": "c:/Users/Yarlley/Documentos/documentosUEFS/Disciplinas/2º periodo/Estrutura de Dados/estudos/build/Debug/outDebug",
+      "cwd": "c:/Users/Yarlley/Documentos/documentosUEFS/Disciplinas/2º_periodo/Estrutura_de_Dados/estudos",
+      "program": "c:/Users/Yarlley/Documentos/documentosUEFS/Disciplinas/2º_periodo/Estrutura_de_Dados/estudos/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
