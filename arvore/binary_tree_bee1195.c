@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 
-
+    
 // creating
 
 typedef struct tree{
